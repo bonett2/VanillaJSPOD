@@ -6,15 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Training Vanilla JS</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="box-10">
-                <div class="box-10 logo">
-                    <canvas id="myCanvas" width="800" height="800"></canvas>
+                <div class="logo">
+                    <canvas id="myCanvas" width="600" height="400"></canvas>
+                    <h1 class="text-logo">Deadmau5</h1>
+                </div>
+            </div>
+            <div class="box-10 header-message">
+                <div class="box-5">
+                    <h1 class="text-title">friends, the wait is finally over... is available to get everywhere!.</h1>
+                    <div class="box-10 tour">
+                        <a href="#" class="principal">Tour <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -22,32 +35,18 @@
 
     <section id="wrapper">
         <div class="container">
-            <div class="box-10">
-                <div class="box-5">
-                    TEXTO O IMAGE
-                    <a>button 1</a>
-                    <a>button 2</a>
+            <div class="wrapper-content">
+                <div class="box-10 center">
+                    <h1 class="text-wrapper">About</h1>
+                    <p class="parragraph-wrapper">Joel Zimmerman doesn’t like being called a DJ. The dance music phenomenon from Toronto, better known as deadmau5, rolls his eyes at the description which he sees as a hopelessly outdated way of describing what he does.</p>
                 </div>
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <div class="box-10">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id sint,
-                    odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-            </div>
-            <div class="box-10">
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-                <div class="box-5">
-                    TEXTO O IMAGE
+                <div class="box-10">
+                    <div class="box-5">
+                        <p class="parragraph-wrapper">His tracks have been included in numerous compilation albums, such as the 2007 In Search of Sunrise 6: Ibiza CD. The February 2008 issue of Mixmag's music magazine included a free CD which was titled MixMag Presents: The Hottest New Name In Dance! DEADMAU5 Tech-Trance-Electro-Madness, mixed by Zimmerman.
+                    </div>
+                    <div class="box-5">
+                        <div class="profile-image"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,10 +176,9 @@
         /* Eye left */ ctx.beginPath(); ctx.transform(1,-0.16,-0.15,1,1,0); ctx.strokeStyle="white"; ctx.arc(140,157, 8,
         0, 2 * Math.PI); ctx.lineCap="round"; ctx.lineWidth="18"; ctx.stroke(); /* BG Mouth */ ctx.beginPath(); ctx.fillStyle="#fff";
         ctx.transform(1,0.17,0.03,1,0,0); ctx.fillRect(120,180,96,20); ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(135,199,78,15);
-        ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(154,210,50,12); ctx.stroke(); /* Text*/ ctx.beginPath(); ctx.fillStyle="#000";
-        ctx.font="36px Arial"; ctx.fillText("Live deadmau5",56,270); ctx.stroke(); }
+        ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(154,210,50,12); ctx.stroke(); }
     </script>
-    <script src="js/app.js" />
+    <script src="assets/js/app.js" />
 </body>
 
 </html>
