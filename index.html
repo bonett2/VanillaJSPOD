@@ -16,17 +16,24 @@
 <body>
     <header>
         <div class="container">
-            <div class="box-10">
-                <div class="logo">
-                    <canvas id="myCanvas" width="600" height="400"></canvas>
-                    <h1 class="text-logo">Deadmau5</h1>
-                </div>
-            </div>
-            <div class="box-10 header-message">
-                <div class="box-5">
-                    <h1 class="text-title">friends, the wait is finally over... is available to get everywhere!.</h1>
-                    <div class="box-10 tour">
-                        <a href="#" class="principal">Tour <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <div class="content">
+                <div class="grid-12">
+                    <div class="navigation">
+                        <div class="grid-11 left">
+                            <div class="logo">
+                                <canvas id="myCanvas" width="600" height="400"></canvas>
+                                <h1>Deadmau5</h1>
+                            </div>
+                        </div>
+                        <div class="grid-1 menu right">
+                            <span class="pointer" onclick="openNav()">&#9776; Menu</span>
+                        </div>
+                    </div>
+                    <div class="information left">
+                        <h1>friends, the wait is finally over... is available to get everywhere!.</h1>
+                    </div>
+                    <div class="grid-1 bounce center">
+                        <a href="#" class="principal">Tour <br><i class="fa fa-angle-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -45,12 +52,9 @@
                         <p class="parragraph-section">His tracks have been included in numerous compilation albums, such as the 2007 In Search of Sunrise 6: Ibiza CD. The February 2008 issue of Mixmag's music magazine included a free CD which was titled MixMag Presents: The Hottest
                             New Name In Dance! DEADMAU5 Tech-Trance-Electro-Madness, mixed by Zimmerman.
                     </div>
-                    <div class="box-4">
-                        <div class="profile-image"></div>
-                    </div>
                 </div>
-                <div class="box-10 tour">
-                    <a href="#" class="principal">What new's <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <div class="box-10 tour bounce">
+                    <a href="#" class="principal">What new's <br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -86,8 +90,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-10 tour center">
-                    <a href="#" class="principal">Listen Now <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <div class="box-10 tour center bounce">
+                    <a href="#" class="principal">Listen Now !<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 </div>
             </div>
     </section>
@@ -138,6 +142,22 @@
         </div>
     </footer>
 
+    <div id="menu" class="panel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("menu").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("menu").style.width = "0";
+        }
+    </script>
     <script type="text/JavaScript">
         window.onload = function(){ var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d"); /* HEAD */ ctx.beginPath(); ctx.strokeStyle="#000"; ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(300,250,50, 0, 2 * Math.PI); ctx.transform(1,0,0,1,1,-2);
         ctx.stroke(); /* Ear Left */ ctx.beginPath(); ctx.strokeStyle="black"; ctx.transform(1,0.09,0.05,1,0,0); ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(168,130,50, 0, 2 * Math.PI); ctx.stroke(); /* Ear Right */ ctx.beginPath(); ctx.transform(1,-0.09,-0.16,1,1,0);

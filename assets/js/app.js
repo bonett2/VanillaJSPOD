@@ -1,4 +1,6 @@
+function x() {
 
-window.onload = function () {
-    
+}
+window.onload = function() {
+
 }
