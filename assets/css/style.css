@@ -1,14 +1,18 @@
 html {
     font-size: 16px;
 }
+
 body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
+
 /* Text Styles */
 
 h1,
@@ -18,68 +22,67 @@ h4,
 h5,
 h6 {
     text-transform: capitalize;
+    color: #fff;
     font-family: 'Gochi Hand', cursive;
 }
-h1 {
-    font-size: 3em;
-}
-h2 {
-    font-size: 2em
-}
-h3 {
-    font-size: 1.5em;
-}
-h4 {
-    font-size: 1em;
-}
-h5 {
-    font-size: 0.8em;
-}
-h6 {
-    font-size: 0.5em;
-}
+
 p {
     font-size: 2em;
+    color: #fff;
     font-family: 'Reenie Beanie', cursive;
 }
+
 a {
     text-decoration: none;
-    font-size: 2.5em;
     font-family: 'Indie Flower', cursive;
 }
+
+
 /* Common Styles */
 
 .container {
     width: 1080px;
     margin: 0 auto;
 }
+
 .center {
     text-align: center;
 }
+
 .left {
     text-align: left;
 }
+
 .right {
     text-align: right;
 }
+
 .justify {
     text-align: justify;
 }
+
+
 /* Sections */
 
 section {
-    height: 800px;
+    height: 760px;
     width: 100%;
     clear: both;
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
-.parallax {
-    background-attachment: fixed !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+section .title-section {
+    padding: 20px 0;
 }
+
+section .parragraph-section {
+    padding: 0 10px;
+    text-shadow: 3px 1px 18px #7341fc;
+    margin-bottom: 20px;
+}
+
+
 /* Grid System */
 
 .box-1,
@@ -94,62 +97,81 @@ section {
 .box-10 {
     float: left;
 }
+
 .box-1 {
     width: 10%;
 }
+
 .box-2 {
     width: 20%;
 }
+
 .box-3 {
     width: 30%;
 }
+
 .box-4 {
     width: 40%;
 }
+
 .box-5 {
     width: 50%;
 }
+
 .box-6 {
     width: 60%;
 }
+
 .box-7 {
     width: 70%;
 }
+
 .box-8 {
     width: 80%;
 }
+
 .box-9 {
     width: 90%;
 }
+
 .box-10 {
     width: 100%;
 }
+
+
 /* buttons */
 
 .principal {
     color: #fff;
     width: 48px;
     height: 26px;
+    font-size: 2.5em;
 }
+
 .secundary {
     background: none;
     width: 48px;
     height: 26px;
     color: red;
 }
+
+
 /* Header */
 
 header {
-    position: relative;
-    background-image: url('../img/rukes_tour.jpg');
-    width: 100%;
-    z-index: 1;
-    height: 680px;
+    background-image: url('../img/denon.jpg');
+    height: 645px;
+    background-position: center;
+    z-index: -1;
 }
-header::after {
+
+header::after,
+#wrapper::after,
+#advantage::after,
+#listen::after {
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     background: rgba(0, 0, 0, 0);
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 94%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(77%, rgba(0, 0, 0, 0)), color-stop(84%, rgba(0, 0, 0, 0)), color-stop(93%, rgba(0, 0, 0, 1)), color-stop(94%, rgba(0, 0, 0, 1)));
@@ -165,71 +187,189 @@ header::after {
     width: auto;
     height: auto;
 }
+
 header .logo {
     position: relative;
     width: 100%;
     height: 50px;
     text-align: center;
 }
+
 header canvas#myCanvas {
     position: relative;
     top: 20px;
     z-index: 3;
     width: 15%;
 }
+
 header h1.text-logo {
     font-size: 3em;
-    color: #fff;
 }
+
 header .header-message {
     position: absolute;
-    top: 35%;
+    top: 240px;
+    z-index: 11;
 }
+
 header h1.text-title {
     position: relative;
     font-family: 'Reenie Beanie', cursive;
-    z-index: 3;
+    z-index: 11;
     color: #fff;
     font-size: 3.4em;
     line-height: 1;
     letter-spacing: 2px;
+    text-shadow: 3px 4px 8px #5cb3ff;
 }
+
 header .header-message .tour {
-    position: relative;
+    position: absolute;
     padding: 30px 0;
-    z-index: 4;
+    z-index: 11;
     margin-top: 20px;
 }
+
+
 /* Wrapper */
 
 #wrapper {
     background-color: #000;
     z-index: 3;
     position: relative;
+    background-image: url('../img/about-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 #wrapper .wrapper-content {
-    z-index: 3;
+    z-index: 11;
     position: relative;
     padding: 40px 0;
 }
-#wrapper h1.text-wrapper {
-    color: #fff;
-    padding: 20px 0;
+
+#wrapper .wrapper-content .wrapper-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-#wrapper p.parragraph-wrapper {
-    color: #fff;
-    padding: 0 30px;
+
+#wrapper .wrapper-content h1.title {
+    font-size: 3em;
+    padding: 15px 0;
+    text-shadow: 3px 4px 5px #5cb3ff;
 }
-#wrapper .wrapper-info{
-    padding: 60px 0;
+
+#wrapper .wrapper-content .wrapper-info .profile-image {
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    background-image: url('../img/ravermag.jpg');
+    width: 100%;
+    height: 690px;
+    top: 0;
+    background-size: cover;
+}
+
+
+/* Advantage*/
+
+#advantage {
+    position: relative;
+    background-image: url('../img/advantage.jpg');
+    width: 100%;
+    z-index: 1;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#advantage .advantage-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 11;
+}
+
+#advantage .advantage-content h1.title {
+    font-size: 3em;
+    padding: 15px 0;
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+#advantage .advantage-principal-card {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#advantage .advantage-card {
+    text-align: center;
+    padding: 40px 15px;
+    margin: 30px 0;
+}
+
+#advantage .advantage-card h2.title-card {
+    font-size: 2em;
+}
+
+
+/* listen */
+
+#listen {
+    position: relative;
+    background-image: url('../img/footer.jpg');
+    width: 100%;
+    z-index: 1;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#listen .listen-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 11;
+}
+
+#listen .listen-content h1.title {
+    font-size: 3em;
+    padding: 15px 0;
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+#listen ul {
     margin-top: 20px;
 }
 
-#wrapper .wrapper-info .profile-image{
-    background-repeat: none;
+#listen ul li {
+    padding: 10px 0;
+}
+
+#listen ul li a {
+    color: #fff;
+    font-size: 3.4em;
+    font-family: 'Gochi Hand', cursive;
+}
+
+footer {
     position: relative;
-    z-index: 5;
-    background-image: url('../img/ravermag.png');
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    z-index: 1;
+    height: 200px;
+    background-color: #000;
+}
+
+footer .footer-content {
+    padding: 40px;
+    position: relative;
+    z-index: 11;
+}
+
+footer .footer-content h1.title {
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+.clearfix {
+    margin: 60px 0;
+    padding: 50px 0;
 }
