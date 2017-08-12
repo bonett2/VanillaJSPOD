@@ -1,3 +1,9 @@
+/*----------------------------------------------
+
+            Html  Styles
+
+------------------------------------------------*/
+
 html {
     font-size: 16px;
 }
@@ -14,7 +20,11 @@ body {
 }
 
 
-/* Grid System */
+/*----------------------------------------------
+
+            Grid  Styles
+
+------------------------------------------------*/
 
 .grid-1,
 .grid-2,
@@ -80,15 +90,15 @@ body {
 }
 
 
-/* Common Styles */
+/*----------------------------------------------
+
+            Common  Styles
+
+------------------------------------------------*/
 
 .container {
     width: 1080px;
     margin: 0 auto;
-}
-
-.content {
-    padding: 40px 0;
 }
 
 .center {
@@ -112,7 +122,11 @@ body {
 }
 
 
-/* Text Styles */
+/*----------------------------------------------
+
+            Typography  Styles
+
+------------------------------------------------*/
 
 h1,
 h2,
@@ -150,36 +164,25 @@ h6 {
     font-size: 0.4em;
 }
 
-
-/* Parragraph*/
-
 p {
     font-size: 2em;
+    color: #fff;
     text-shadow: 3px 4px 8px #5cb3ff;
 }
 
 a {
     text-decoration: none;
-    font-size: 2.2em;
+    font-size: 2em;
     font-family: 'Indie Flower', cursive;
-}
-
-i {
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-
-/* buttons */
-
-.principal {
     color: #fff;
     width: 50px;
     height: 30px;
     text-shadow: 3px 4px 8px #5cb3ff;
 }
 
-
-/* List Styles */
+i {
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
 
 ul,
 li {
@@ -187,33 +190,72 @@ li {
 }
 
 
-/* Video Styles */
+/*----------------------------------------------
+
+                Video styles 
+
+------------------------------------------------*/
 
 video {
+    width: 100%;
     background-color: black;
     padding: 20px 0;
     -moz-box-shadow: 2px 17px 42px #000000;
     -webkit-box-shadow: 2px 17px 42px #000000;
     box-shadow: 2px 17px 42px #000000;
+    height: 300px;
+    z-index: 2;
+    position: relative;
 }
 
 
-/* Sections styles  */
+/*----------------------------------------------
+
+                Sections styles 
+
+------------------------------------------------*/
 
 section {
-    height: 760px;
+    height: 660px;
     width: 100%;
     position: relative;
     z-index: 1;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    padding: 25px 0;
 }
 
-section .title-section {
-    padding: 20px 0;
+.section-content {
+    padding: 80px 0;
 }
 
-section .parragraph-section {
-    padding: 0 10px;
-    margin-bottom: 20px;
+
+/*----------------------------------------------
+
+                Background styles 
+
+------------------------------------------------*/
+
+.bg {
+    position: relative;
+    z-index: 1;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-two {
+    background-image: url('../img/about.jpg');
+}
+
+.bg-three {
+    background-image: url('../img/music.jpg');
+}
+
+.bg-four {
+    background-image: url('../img/channel.jpg');
 }
 
 
@@ -226,9 +268,13 @@ section .parragraph-section {
 header {
     background: url('../img/header.png') no-repeat;
     background-size: cover;
-    height: 645px;
+    height: 660px;
     z-index: 1;
     position: relative;
+}
+
+.header-content {
+    padding: 40px 0;
 }
 
 header .navigation {
@@ -243,8 +289,15 @@ header .navigation {
 header .logo {
     position: relative;
     text-align: center;
-    margin-left: 4%;
+    margin-left: 7%;
     z-index: 4;
+}
+
+header canvas#myCanvas {
+    position: relative;
+    top: 20px;
+    z-index: 3;
+    width: 15%;
 }
 
 header .menu {
@@ -262,7 +315,97 @@ header .information {
 }
 
 
-/* NAvigation */
+/*----------------------------------------------
+
+                Wrapper styles 
+
+------------------------------------------------*/
+
+#about .profile {
+    margin-top: 20px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+
+/*----------------------------------------------
+
+                Music styles 
+
+------------------------------------------------*/
+
+#music .group {
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+#music .type {
+    padding: 5px 0;
+}
+
+
+/*----------------------------------------------
+
+                Channel styles 
+
+------------------------------------------------*/
+
+#channel {
+    height: 800px !important;
+}
+
+#channel .channel-available {
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+#channel ul {
+    position: relative;
+    z-index: 4;
+    display: inline;
+}
+
+#channel ul li {
+    padding: 0 10px;
+    margin: 0 10px;
+    display: inline;
+}
+
+
+/*----------------------------------------------
+
+            Footer  Styles
+
+------------------------------------------------*/
+
+footer {
+    position: relative;
+    z-index: 1;
+    height: 140px;
+    background-color: #000;
+}
+
+footer .section-content {
+    padding: 40px 0;
+}
+
+footer ul {
+    position: relative;
+    z-index: 4;
+    display: inline;
+}
+
+footer ul li {
+    padding: 0 3px;
+    display: inline;
+}
+
+
+/*----------------------------------------------
+
+            Panel Menu  Styles
+
+------------------------------------------------*/
 
 .panel {
     height: 100%;
@@ -278,24 +421,37 @@ header .information {
     text-align: center;
 }
 
-.panel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+.panel .menu-content {
+    height: 50%;
+    width: 100%;
+}
+
+.panel .menu-content ul {
+    margin-top: 50px;
+}
+
+.panel .menu-content ul,
+.panel .menu-content ul li {
+    display: inline-block;
+    width: 100%;
+}
+
+.panel .menu-content ul li a {
+    padding: 40px 0 !important;
+    margin-top: 30px 0 !important;
+    font-size: 3em !important;
     transition: 0.3s;
 }
 
-.panel a:hover {
+.panelul .menu-content ul li a:hover {
     color: #f1f1f1;
 }
 
-.panel .closebtn {
+.panel .close {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 5em;
     margin-left: 50px;
 }
 
@@ -308,203 +464,17 @@ header .information {
     }
 }
 
-header .logo {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-}
 
-header canvas#myCanvas {
-    position: relative;
-    top: 20px;
-    z-index: 3;
-    width: 15%;
-}
+/*----------------------------------------------
 
-header h1.text-logo {
-    font-size: 3em;
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
+            Opaciity  Styles
 
-header .header-message {
-    position: absolute;
-    top: 240px;
-    z-index: 11;
-}
-
-header h1.text-title {
-    position: relative;
-    font-family: 'Reenie Beanie', cursive;
-    z-index: 11;
-    color: #fff;
-    font-size: 3.4em;
-    line-height: 1;
-    letter-spacing: 2px;
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-header .header-message .tour {
-    position: absolute;
-    padding: 30px 0;
-    z-index: 11;
-    margin-top: 20px;
-}
-
-
-/* Wrapper */
-
-#wrapper {
-    background-color: #000;
-    z-index: 3;
-    position: relative;
-    background-image: url('../img/about-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 50px;
-}
-
-#wrapper .wrapper-content {
-    z-index: 11;
-    position: relative;
-    padding: 40px 0;
-}
-
-#wrapper .wrapper-content .wrapper-info {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#wrapper .wrapper-content h1.title {
-    font-size: 3em;
-    padding: 15px 0;
-    text-shadow: 3px 4px 5px #5cb3ff;
-}
-
-#wrapper .wrapper-content .wrapper-info .profile-image {
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: -1;
-    background-image: url('../img/ravermag.jpg');
-    width: 100%;
-    height: 690px;
-    top: 0;
-    background-size: cover;
-}
-
-
-/* Advantage*/
-
-#advantage {
-    position: relative;
-    background-image: url('../img/advantage.jpg');
-    width: 100%;
-    z-index: 1;
-    height: 680px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#advantage .advantage-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    z-index: 11;
-}
-
-#advantage .advantage-content h1.title {
-    font-size: 3em;
-    padding: 15px 0;
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-#advantage .advantage-principal-card {
-    margin: 0 auto;
-    width: 1200px;
-}
-
-#advantage .advantage-card {
-    text-align: center;
-    padding: 40px 15px;
-    margin: 30px 0;
-}
-
-#advantage .advantage-card h2.title-card {
-    font-size: 2em;
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-
-/* listen */
-
-#listen {
-    position: relative;
-    background-image: url('../img/footer.jpg');
-    width: 100%;
-    z-index: 1;
-    height: 680px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#listen .listen-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    z-index: 11;
-}
-
-#listen .listen-content h1.title {
-    font-size: 3em;
-    padding: 15px 0;
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-#listen ul {
-    margin-top: 20px;
-}
-
-#listen ul li {
-    padding: 10px 0;
-}
-
-#listen ul li a {
-    color: #fff;
-    font-size: 3.4em;
-    font-family: 'Gochi Hand', cursive;
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    height: 200px;
-    background-color: #000;
-}
-
-footer .footer-content {
-    padding: 40px;
-    position: relative;
-    z-index: 11;
-}
-
-footer .footer-content h1.title {
-    text-shadow: 3px 4px 8px #5cb3ff;
-}
-
-.clearfix {
-    margin: 60px 0;
-    padding: 50px 0;
-}
-
-
-/* OPACITY*/
+------------------------------------------------*/
 
 header::after,
-#wrapper::after,
-#advantage::after,
-#listen::after {
+#about::after,
+#music::after,
+#channel::after {
     content: "";
     position: absolute;
     z-index: 2;
@@ -525,7 +495,11 @@ header::after,
 }
 
 
-/* animations */
+/*----------------------------------------------
+
+                Animations
+
+------------------------------------------------*/
 
 .bounce {
     -moz-animation: bounce 2s infinite;
