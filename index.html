@@ -19,14 +19,14 @@
             <div class="header-content">
                 <div class="grid-12">
                     <div class="navigation">
-                        <div class="grid-11 left">
+                        <div class="grid-12 menu right">
+                            <span class="pointer" onclick="openNav()">&#9776; Menu</span>
+                        </div>
+                        <div class="grid-12 center">
                             <div class="logo">
                                 <canvas id="myCanvas" width="600" height="400"></canvas>
                                 <h1>Deadmau5</h1>
                             </div>
-                        </div>
-                        <div class="grid-1 menu right">
-                            <span class="pointer" onclick="openMenu()">&#9776; Menu</span>
                         </div>
                     </div>
                     <div class="information left">
@@ -148,7 +148,7 @@
 
     <div id="menu" class="panel">
         <div>
-            <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
         </div>
         <div class="menu-content">
             <ul>
@@ -168,11 +168,11 @@
         </div>
     </div>
     <script>
-        function openMenu() {
+        function openNav() {
             document.getElementById("menu").style.width = "100%";
         }
 
-        function closeMenu() {
+        function closeNav() {
             document.getElementById("menu").style.width = "0";
         }
     </script>

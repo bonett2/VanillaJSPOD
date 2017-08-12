@@ -288,8 +288,6 @@ header .navigation {
 
 header .logo {
     position: relative;
-    text-align: center;
-    margin-left: 7%;
     z-index: 4;
 }
 
