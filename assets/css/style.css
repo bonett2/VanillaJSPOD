@@ -286,7 +286,7 @@ header .information {
 
 ------------------------------------------------*/
 
-#about .profile {
+#bio .profile {
     margin-top: 20px;
     padding: 10px 0;
     margin-bottom: 20px;
@@ -295,16 +295,16 @@ header .information {
 
 /*----------------------------------------------
 
-                Music styles 
+                category styles 
 
 ------------------------------------------------*/
 
-#music .group {
+#category .group {
     padding: 40px 0;
     margin: 40px 0;
 }
 
-#music .type {
+#category .type {
     padding: 10px 20px;
 }
 
@@ -384,6 +384,7 @@ footer ul li {
     transition: 0.5s;
     padding-top: 60px;
     text-align: center;
+    opacity: 0;
 }
 
 .panel .menu-content {
@@ -437,8 +438,8 @@ footer ul li {
 ------------------------------------------------*/
 
 header::after,
-#about::after,
-#music::after,
+#bio::after,
+#category::after,
 #channel::after {
     content: "";
     position: absolute;
@@ -585,7 +586,7 @@ header::after,
     p {
         font-size: 1.5em;
     }
-    #music {
+    #category {
         height: 800px;
     }
     footer {

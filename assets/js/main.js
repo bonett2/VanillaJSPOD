@@ -3,10 +3,6 @@
 
     'use strict';
 
-    function init() {
-        loadLogo();
-    }
-
     function loadLogo() {
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
@@ -70,23 +66,54 @@
         ctx.stroke();
     }
 
-    function dataStorage() {
-        var musicalGenre = window.localStorage.getItem(music);
-        if (!localStorage) {
-            var musical = [
-                { name: 'Techno', description: 'evelopments in the Detroit scene led to the opening of a nightclub called the Music Institute' },
-                { name: 'House', description: 'House music created by club DJs and music producers in Chicago in the early 1980s.' },
-            ]
-            window.localStorage.setItem('musicalGenre', JSON.stringify);
-        } else {
-            musicalGenre = JSON.parse(window.localStorage.getItem(musicalGenre));
-        }
+    function getContent(fragmentId, callback) {
 
-        document.addEventListener('DOM', function() {
-            console.log()
-        });
+        var request = new XMLHttpRequest();
+
+        request.onload = function() {
+            callback(request.responseText);
+        };
+
+        request.open("GET", fragmentId + ".html");
+        request.send(null);
     }
 
-    init();
+    function setActiveLink(fragmentId) {
+        var navbarDiv = document.getElementById("navbar"),
+            links = navbarDiv.children,
+            i, link, pageName;
+        for (i = 0; i < links.length; i++) {
+            link = links[i];
+            pageName = link.getAttribute("href").substr(1);
+            if (pageName === fragmentId) {
+                link.setAttribute("class", "active");
+            } else {
+                link.removeAttribute("class");
+            }
+        }
+    }
+
+    function navigate() {
+
+        var contentDiv = document.getElementById("content"),
+
+            fragmentId = location.hash.substr(1);
+
+        getContent(fragmentId, function(content) {
+            contentDiv.innerHTML = content;
+        });
+
+        setActiveLink(fragmentId);
+    }
+
+    if (!location.hash) {
+
+        location.hash = "#home";
+    }
+
+    navigate();
+
+    window.addEventListener("hashchange", navigate)
+
 
 })(window);
