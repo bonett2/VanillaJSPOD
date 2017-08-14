@@ -13,7 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="page">
     <header id="top">
         <div class="container">
             <div class="header-content">
@@ -67,25 +67,18 @@
                     <p>God is a Dj life is a dancefloor love is the rhythm you are music</p>
                 </div>
                 <div class="grid-12 group center">
-                    <div class="grid-4">
+                    <div class="grid-6">
                         <div class="type">
-                            <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-star icon"></i>
                             <h2>Techno</h2>
                             <p>Developments in the Detroit scene led to the opening of a nightclub called the Music Institute</p>
                         </div>
                     </div>
-                    <div class="grid-4">
+                    <div class="grid-6">
                         <div class="type">
-                            <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-star icon"></i>
                             <h2>House</h2>
                             <p>House music created by club DJs and music producers in Chicago in the early 1980s.</p>
-                        </div>
-                    </div>
-                    <div class="grid-4">
-                        <div class="type">
-                            <i class="fa fa-angle-down"></i>
-                            <h2>Deep</h2>
-                            <p>Deep house is a subgenre of house music. It originated in the 1980s initially</p>
                         </div>
                     </div>
                 </div>
@@ -153,38 +146,29 @@
         <div class="menu-content">
             <ul>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#">About me</a>
                 </li>
                 <li>
-                    <a href="#">Clients</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#">Music</a>
                 </li>
             </ul>
         </div>
     </div>
     <script>
         function openNav() {
-            document.getElementById("menu").style.width = "100%";
+            document.getElementById("menu").style.transform = "translateX(100%)";
+            document.getElementById("page").style.overflowY = "hidden";
         }
 
         function closeNav() {
-            document.getElementById("menu").style.width = "0";
+            document.getElementById("menu").style.transform = "translateX(0%)";
+            document.getElementById("page").style.overflowY = "scroll";
         }
     </script>
-    <script type="text/JavaScript">
-        window.onload = function(){ var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d"); /* HEAD */ ctx.beginPath(); ctx.strokeStyle="#000"; ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(300,250,50, 0, 2 * Math.PI); ctx.transform(1,0,0,1,1,-2);
-        ctx.stroke(); /* Ear Left */ ctx.beginPath(); ctx.strokeStyle="black"; ctx.transform(1,0.09,0.05,1,0,0); ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(168,130,50, 0, 2 * Math.PI); ctx.stroke(); /* Ear Right */ ctx.beginPath(); ctx.transform(1,-0.09,-0.16,1,1,0);
-        ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(440,140,50, 0, 2 * Math.PI); ctx.stroke(); /* Mouth */ ctx.beginPath(); ctx.transform(1.65,-0.01,0.11,1.52,1,0); ctx.lineTo(137.9, 175); ctx.strokeStyle="white"; ctx.arc(188, 175, 50, 0, 1 * Math.PI);
-        ctx.lineCap="round"; ctx.lineWidth="10"; ctx.stroke(); /* Eye Right */ ctx.beginPath(); ctx.transform(1,-0.01,0.23,1,1,0); ctx.strokeStyle="white"; ctx.arc(186,136, 8, 0, 2 * Math.PI); ctx.lineCap="round"; ctx.lineWidth="18"; ctx.stroke(); /*
-        Eye left */ ctx.beginPath(); ctx.transform(1,-0.16,-0.15,1,1,0); ctx.strokeStyle="white"; ctx.arc(140,157, 8, 0, 2 * Math.PI); ctx.lineCap="round"; ctx.lineWidth="18"; ctx.stroke(); /* BG Mouth */ ctx.beginPath(); ctx.fillStyle="#fff"; ctx.transform(1,0.17,0.03,1,0,0);
-        ctx.fillRect(120,180,96,20); ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(135,199,78,15); ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(154,210,50,12); ctx.stroke(); }
-    </script>
-    <script src="assets/js/app.js" />
+    <script type="text/javaScript" src="assets/js/main.js"></script>
 </body>
 
 </html>

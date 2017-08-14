@@ -10,7 +10,6 @@ html {
 
 body {
     overflow-x: hidden;
-    overflow-y: scroll;
     font-family: 'Reenie Beanie', cursive;
 }
 
@@ -38,55 +37,24 @@ body {
 .grid-10,
 .grid-11,
 .grid-12 {
-    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 15px 0;
 }
 
-.grid-1 {
-    width: 8.33%;
-}
-
-.grid-2 {
-    width: 16.66%;
-}
-
-.grid-3 {
-    width: 24.99%;
-}
-
-.grid-4 {
-    width: 33.32%;
-}
-
-.grid-5 {
-    width: 41.65%;
-}
-
-.grid-6 {
-    width: 49.98%;
-}
-
-.grid-7 {
-    width: 58.31%;
-}
-
-.grid-8 {
-    width: 66.64%;
-}
-
-.grid-9 {
-    width: 74.97%;
-}
-
-.grid-10 {
-    width: 83.3%;
-}
-
-.grid-11 {
-    width: 91.63%;
-}
-
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
 .grid-12 {
-    width: 100%;
+    float: left;
 }
 
 
@@ -97,7 +65,7 @@ body {
 ------------------------------------------------*/
 
 .container {
-    width: 1080px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -119,6 +87,11 @@ body {
 
 .pointer {
     cursor: pointer;
+}
+
+.icon {
+    font-size: 3em;
+    color: #fff;
 }
 
 
@@ -220,10 +193,6 @@ section {
     width: 100%;
     position: relative;
     z-index: 1;
-    background-color: #000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 50px;
     padding: 25px 0;
 }
 
@@ -242,8 +211,6 @@ section {
     position: relative;
     z-index: 1;
     height: 680px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .bg-two {
@@ -267,9 +234,9 @@ section {
 
 header {
     background: url('../img/header.png') no-repeat;
-    background-size: cover;
     height: 660px;
     z-index: 1;
+    width: 100%;
     position: relative;
 }
 
@@ -289,11 +256,11 @@ header .navigation {
 header .logo {
     position: relative;
     z-index: 4;
+    top: -50px;
 }
 
 header canvas#myCanvas {
     position: relative;
-    top: 20px;
     z-index: 3;
     width: 15%;
 }
@@ -338,7 +305,7 @@ header .information {
 }
 
 #music .type {
-    padding: 5px 0;
+    padding: 10px 20px;
 }
 
 
@@ -407,11 +374,11 @@ footer ul li {
 
 .panel {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: absolute;
     z-index: 50;
     top: 0;
-    left: 0;
+    left: -100%;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -567,5 +534,135 @@ header::after,
         -ms-transform: translateY(-15px);
         -webkit-transform: translateY(-15px);
         transform: translateY(-15px);
+    }
+}
+
+
+/*----------------------------------------------
+
+                Media queries
+
+------------------------------------------------*/
+
+@media screen and (min-width: 320px) {
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        width: 100%;
+    }
+    header {
+        background-size: cover;
+        height: 560px;
+        text-align: center;
+    }
+    header .information {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 60px;
+        padding: 0;
+    }
+    header .header-content {
+        padding: 20px 0;
+    }
+    header .information h1 {
+        font-size: 2em;
+    }
+    header canvas#myCanvas {
+        width: 180px;
+    }
+    .bounce {
+        text-align: center;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    #music {
+        height: 800px;
+    }
+    footer {
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid-1 {
+        width: 8.33%;
+    }
+    .grid-2 {
+        width: 16.66%;
+    }
+    .grid-3 {
+        width: 24.99%;
+    }
+    .grid-4 {
+        width: 33.32%;
+    }
+    .grid-5 {
+        width: 41.65%;
+    }
+    .grid-6 {
+        width: 49.98%;
+    }
+    .grid-7 {
+        width: 58.31%;
+    }
+    .grid-8 {
+        width: 66.64%;
+    }
+    .grid-9 {
+        width: 74.97%;
+    }
+    .grid-10 {
+        width: 83.3%;
+    }
+    .grid-11 {
+        width: 91.63%;
+    }
+    .grid-12 {
+        width: 100%;
+    }
+    header {
+        background-size: cover;
+        height: 660px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-size: cover;
+        min-height: 660px;
+    }
+    header .information h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em;
+    }
+    footer {
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        background-size: cover;
+    }
+    header .information h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em;
+    }
+    footer {
+        height: 170px;
     }
 }
