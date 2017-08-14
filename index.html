@@ -6,181 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Training Vanilla JS</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body id="page">
+    <header id="top">
         <div class="container">
-            <div class="box-10">
-                <div class="box-10 logo">
-                    <canvas id="myCanvas" width="800" height="800"></canvas>
+            <div class="header-content">
+                <div class="grid-12">
+                    <div class="navigation">
+                        <div class="grid-12 menu right">
+                            <span class="pointer" onclick="openNav()">&#9776; Menu</span>
+                        </div>
+                        <div class="grid-12 center">
+                            <div class="logo">
+                                <canvas id="myCanvas" width="600" height="400"></canvas>
+                                <h1>Deadmau5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information left">
+                        <h1>friends, the wait is finally over... is available to get everywhere!.</h1>
+                    </div>
+                    <div class="grid-12 bounce left">
+                        <a href="#">Take a Tour</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="wrapper">
-        <div class="container">
-            <div class="box-10">
-                <div class="box-5">
-                    TEXTO O IMAGE
-                    <a>button 1</a>
-                    <a>button 2</a>
-                </div>
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="navbar" class="panel">
+        <a href="#home" onclick="closeNav()">Home</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#music" onclick="closeNav()">Music</a>
+    </div>
 
-    <section id="about">
-        <div class="container">
-            <div class="box-10">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id sint,
-                    odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-            </div>
-            <div class="box-10">
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="advantage">
-        <div class="container">
-            <div class="box-10">
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-                <div class="box-5">
-                    TEXTO O IMAGE
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonial">
-        <div class="container">
-            <div class="box-10">
-                IMAGE Y TEXTO
-            </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <div class="container">
-            <div class="box-10">
-                <h1>features</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id sint,
-                    odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-            </div>
-            <div class="box-10">
-                <div class="box-3">
-                    TEXTO
-                </div>
-                <div class="box-6">
-                    IMAGE
-                </div>
-                <div class="box-3">
-                    TEXTO
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="info">
-        <div class="container">
-            <div class="box-10">
-                <div class="box-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptate reiciendis, veniam quae neque
-                        harum doloremque omnis voluptates rerum repellat, doloribus deleniti eveniet dolorum dolorem natus
-                        inventore dignissimos tempora voluptatibus.</p>
-                </div>
-                <div class="box-4">
-                    <a>button</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="screenshot">
-        <div class="container">
-            <div class="box-10">
-                <h1>ScreenShots</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id sint,
-                    odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-            </div>
-            <div class="box-10">
-                IMAGE SLIDER
-            </div>
-        </div>
-    </section>
-
-    <section id="download">
-        <div class="container">
-            <div class="box-10">
-                <h1>Download</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id sint,
-                    odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-            </div>
-            <div>IMAGE</div>
-            <div class="box-10">
-                <div class="box-5">
-                    <h1>Available ON</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id
-                        sint, odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-                </div>
-                <div class="box-5">
-                    ICONS STORE
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="content"></div>
 
     <footer>
         <div class="container">
-            <div class="box-10">
-                <h1>Subscribe</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus velit reprehenderit deserunt cumque id sint,
-                    odio nisi error doloribus commodi inventore ad itaque et, quo corrupti illo esse tempore nam!</p>
-            </div>
-            <div class="box-10">
-                <input type="text" />
-                <button type="submit">Button</button>
-            </div>
-            <div class="box-10">
-                <div class="box-5">
-                    <span>COPYRIGHT © 2016. ALL RIGHTS RESERVED.</span>
-                </div>
-                <div class="box-5">
-                    ARROW
+            <div class="section-content">
+                <div class="grid-12 center">
+                    <div class="grid-4">
+                        <p>Deadmau5 Live</p>
+                    </div>
+                    <div class="grid-4">
+                        <p>Copyright 2017</p>
+                    </div>
+                    <div class="grid-4">
+                        <ul>
+                            <li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script type="text/JavaScript">
-        window.onload = function(){ var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d"); /* HEAD */ ctx.beginPath();
-        ctx.strokeStyle="#000"; ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(300,250,50, 0, 2 * Math.PI); ctx.transform(1,0,0,1,1,-2);
-        ctx.stroke(); /* Ear Left */ ctx.beginPath(); ctx.strokeStyle="black"; ctx.transform(1,0.09,0.05,1,0,0); ctx.lineCap="round";
-        ctx.lineWidth="100"; ctx.arc(168,130,50, 0, 2 * Math.PI); ctx.stroke(); /* Ear Right */ ctx.beginPath(); ctx.transform(1,-0.09,-0.16,1,1,0);
-        ctx.lineCap="round"; ctx.lineWidth="100"; ctx.arc(440,140,50, 0, 2 * Math.PI); ctx.stroke(); /* Mouth */ ctx.beginPath();
-        ctx.transform(1.65,-0.01,0.11,1.52,1,0); ctx.lineTo(137.9, 175); ctx.strokeStyle="white"; ctx.arc(188, 175, 50, 0,
-        1 * Math.PI); ctx.lineCap="round"; ctx.lineWidth="10"; ctx.stroke(); /* Eye Right */ ctx.beginPath(); ctx.transform(1,-0.01,0.23,1,1,0);
-        ctx.strokeStyle="white"; ctx.arc(186,136, 8, 0, 2 * Math.PI); ctx.lineCap="round"; ctx.lineWidth="18"; ctx.stroke();
-        /* Eye left */ ctx.beginPath(); ctx.transform(1,-0.16,-0.15,1,1,0); ctx.strokeStyle="white"; ctx.arc(140,157, 8,
-        0, 2 * Math.PI); ctx.lineCap="round"; ctx.lineWidth="18"; ctx.stroke(); /* BG Mouth */ ctx.beginPath(); ctx.fillStyle="#fff";
-        ctx.transform(1,0.17,0.03,1,0,0); ctx.fillRect(120,180,96,20); ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(135,199,78,15);
-        ctx.transform(1,-0.001,-0.03,1,0,0); ctx.fillRect(154,210,50,12); ctx.stroke(); /* Text*/ ctx.beginPath(); ctx.fillStyle="#000";
-        ctx.font="36px Arial"; ctx.fillText("Live deadmau5",56,270); ctx.stroke(); }
+
+    <script>
+        function openNav() {
+            document.getElementById("navbar").style.transform = "translateX(100%)";
+            document.getElementById("page").style.overflowY = "hidden";
+            document.getElementById("navbar").style.opacity = 1;
+            document.getElementById("navbar").style.transition = "opacity 1s";
+
+        }
+
+        function closeNav() {
+            document.getElementById("navbar").style.transform = "translateX(0%)";
+            document.getElementById("page").style.overflowY = "scroll";
+            document.getElementById("navbar").style.opacity = 0;
+        }
     </script>
-    <script src="js/app.js" />
+    <script type="text/javaScript" src="assets/js/main.js"></script>
 </body>
 
 </html>

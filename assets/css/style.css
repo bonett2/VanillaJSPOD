@@ -1,0 +1,669 @@
+/*----------------------------------------------
+
+            Html  Styles
+
+------------------------------------------------*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----------------------------------------------
+
+            Grid  Styles
+
+------------------------------------------------*/
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+    position: relative;
+    min-height: 1px;
+    padding: 15px 0;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+    float: left;
+}
+
+
+/*----------------------------------------------
+
+            Common  Styles
+
+------------------------------------------------*/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 3em;
+    color: #fff;
+}
+
+
+/*----------------------------------------------
+
+            Typography  Styles
+
+------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Gochi Hand', cursive;
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 0.6em;
+}
+
+h6 {
+    font-size: 0.4em;
+}
+
+p {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    width: 50px;
+    height: 30px;
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+i {
+    text-shadow: 3px 4px 8px #5cb3ff;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/*----------------------------------------------
+
+                Video styles 
+
+------------------------------------------------*/
+
+video {
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    -moz-box-shadow: 2px 17px 42px #000000;
+    -webkit-box-shadow: 2px 17px 42px #000000;
+    box-shadow: 2px 17px 42px #000000;
+    height: 300px;
+    z-index: 2;
+    position: relative;
+}
+
+
+/*----------------------------------------------
+
+                Sections styles 
+
+------------------------------------------------*/
+
+section {
+    height: 660px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 25px 0;
+}
+
+.section-content {
+    padding: 80px 0;
+}
+
+
+/*----------------------------------------------
+
+                Background styles 
+
+------------------------------------------------*/
+
+.bg {
+    position: relative;
+    z-index: 1;
+    height: 680px;
+}
+
+.bg-two {
+    background-image: url('../img/about.jpg');
+}
+
+.bg-three {
+    background-image: url('../img/music.jpg');
+}
+
+.bg-four {
+    background-image: url('../img/channel.jpg');
+}
+
+
+/*----------------------------------------------
+
+                Header styles 
+
+------------------------------------------------*/
+
+header {
+    background: url('../img/header.png') no-repeat;
+    height: 660px;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+}
+
+.header-content {
+    padding: 40px 0;
+}
+
+header .navigation {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+header .logo {
+    position: relative;
+    z-index: 4;
+    top: -50px;
+}
+
+header canvas#myCanvas {
+    position: relative;
+    z-index: 3;
+    width: 15%;
+}
+
+header .menu {
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+header .information {
+    padding: 25px 100px 40px 0;
+    position: relative;
+    z-index: 4;
+    margin: 80px 0;
+}
+
+
+/*----------------------------------------------
+
+                Wrapper styles 
+
+------------------------------------------------*/
+
+#bio .profile {
+    margin-top: 20px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+
+/*----------------------------------------------
+
+                category styles 
+
+------------------------------------------------*/
+
+#category .group {
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+#category .type {
+    padding: 10px 20px;
+}
+
+
+/*----------------------------------------------
+
+                Channel styles 
+
+------------------------------------------------*/
+
+#channel {
+    height: 800px !important;
+}
+
+#channel .channel-available {
+    padding: 40px 0;
+    margin: 40px 0;
+}
+
+#channel ul {
+    position: relative;
+    z-index: 4;
+    display: inline;
+}
+
+#channel ul li {
+    padding: 0 10px;
+    margin: 0 10px;
+    display: inline;
+}
+
+
+/*----------------------------------------------
+
+            Footer  Styles
+
+------------------------------------------------*/
+
+footer {
+    position: relative;
+    z-index: 1;
+    height: 140px;
+    background-color: #000;
+}
+
+footer .section-content {
+    padding: 40px 0;
+}
+
+footer ul {
+    position: relative;
+    z-index: 4;
+    display: inline;
+}
+
+footer ul li {
+    padding: 0 3px;
+    display: inline;
+}
+
+
+/*----------------------------------------------
+
+            Panel Menu  Styles
+
+------------------------------------------------*/
+
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: -100%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    opacity: 0;
+}
+
+.panel .menu-content {
+    height: 50%;
+    width: 100%;
+}
+
+.panel .menu-content ul {
+    margin-top: 50px;
+}
+
+.panel .menu-content ul,
+.panel .menu-content ul li {
+    display: inline-block;
+    width: 100%;
+}
+
+.panel .menu-content ul li a {
+    padding: 40px 0 !important;
+    margin-top: 30px 0 !important;
+    font-size: 3em !important;
+    transition: 0.3s;
+}
+
+.panelul .menu-content ul li a:hover {
+    color: #f1f1f1;
+}
+
+.panel .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 5em;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .panel {
+        padding-top: 15px;
+    }
+    .panel a {
+        font-size: 18px;
+    }
+}
+
+
+/*----------------------------------------------
+
+            Opaciity  Styles
+
+------------------------------------------------*/
+
+header::after,
+#bio::after,
+#category::after,
+#channel::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 94%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(77%, rgba(0, 0, 0, 0)), color-stop(84%, rgba(0, 0, 0, 0)), color-stop(93%, rgba(0, 0, 0, 1)), color-stop(94%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 94%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 94%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 94%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 1) 93%, rgba(0, 0, 0, 1) 94%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+/*----------------------------------------------
+
+                Animations
+
+------------------------------------------------*/
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+    position: relative;
+    z-index: 6;
+}
+
+@-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+
+/*----------------------------------------------
+
+                Media queries
+
+------------------------------------------------*/
+
+@media screen and (min-width: 320px) {
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        width: 100%;
+    }
+    header {
+        background-size: cover;
+        height: 560px;
+        text-align: center;
+    }
+    header .information {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 60px;
+        padding: 0;
+    }
+    header .header-content {
+        padding: 20px 0;
+    }
+    header .information h1 {
+        font-size: 2em;
+    }
+    header canvas#myCanvas {
+        width: 180px;
+    }
+    .bounce {
+        text-align: center;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    #category {
+        height: 800px;
+    }
+    footer {
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid-1 {
+        width: 8.33%;
+    }
+    .grid-2 {
+        width: 16.66%;
+    }
+    .grid-3 {
+        width: 24.99%;
+    }
+    .grid-4 {
+        width: 33.32%;
+    }
+    .grid-5 {
+        width: 41.65%;
+    }
+    .grid-6 {
+        width: 49.98%;
+    }
+    .grid-7 {
+        width: 58.31%;
+    }
+    .grid-8 {
+        width: 66.64%;
+    }
+    .grid-9 {
+        width: 74.97%;
+    }
+    .grid-10 {
+        width: 83.3%;
+    }
+    .grid-11 {
+        width: 91.63%;
+    }
+    .grid-12 {
+        width: 100%;
+    }
+    header {
+        background-size: cover;
+        height: 660px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-size: cover;
+        min-height: 660px;
+    }
+    header .information h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em;
+    }
+    footer {
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        background-size: cover;
+    }
+    header .information h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em;
+    }
+    footer {
+        height: 170px;
+    }
+}
