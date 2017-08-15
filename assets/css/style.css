@@ -198,6 +198,8 @@ section {
 
 .section-content {
     padding: 80px 0;
+    z-index: 5;
+    position: relative;
 }
 
 
@@ -387,38 +389,15 @@ footer ul li {
     opacity: 0;
 }
 
-.panel .menu-content {
-    height: 50%;
-    width: 100%;
+.panel a {
+    padding: 0px 20px !important;
+    margin-top: 40px 40px !important;
+    font-size: 2em;
+    transition: all 1s ease;
 }
 
-.panel .menu-content ul {
-    margin-top: 50px;
-}
-
-.panel .menu-content ul,
-.panel .menu-content ul li {
-    display: inline-block;
-    width: 100%;
-}
-
-.panel .menu-content ul li a {
-    padding: 40px 0 !important;
-    margin-top: 30px 0 !important;
-    font-size: 3em !important;
-    transition: 0.3s;
-}
-
-.panelul .menu-content ul li a:hover {
-    color: #f1f1f1;
-}
-
-.panel .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 5em;
-    margin-left: 50px;
+.panelul a:hover {
+    font-size: 3em;
 }
 
 @media screen and (max-height: 450px) {
@@ -426,7 +405,9 @@ footer ul li {
         padding-top: 15px;
     }
     .panel a {
-        font-size: 18px;
+        font-size: 1.7em;
+        margin: 0 50px;
+        padding: 0 20px;
     }
 }
 
